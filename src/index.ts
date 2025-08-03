@@ -1,6 +1,5 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import fetch from "node-fetch";
 import { z } from "zod";
 
 const server = new McpServer({
@@ -21,6 +20,8 @@ const server = new McpServer({
  */
 async function getIPInfo() {
   try {
+    // 动态导入 node-fetch 以兼容 CommonJS/ESM
+    const fetch = (await import("node-fetch")).default;
     // 发送请求到 ipapi.co，获取 JSON 格式的 IP 信息
     const response = await fetch("https://ipapi.co/json/", {
       headers: {

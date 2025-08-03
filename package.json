@@ -1,22 +1,37 @@
 {
-  "name": "get-local-ipinfo-mcp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@littlesirius/get-local-ipinfo-mcp",
+  "version": "1.0.2",
+  "description": "MCP 工具服务：获取本机公网 IP 及地理位置信息，支持反爬虫和速率限制处理。",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "type": "module",
   "bin": {
-    "weather": "./build/index.js"
-  },
-  "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "get-local-ipinfo-mcp": "./build/index.js"
   },
   "files": [
     "build"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "keywords": [
+    "modelcontextprotocol",
+    "mcp",
+    "ip",
+    "ipinfo",
+    "public-ip",
+    "geoip"
+  ],
+  "author": "Xiao-Jiang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiao-Jiang-233/get-local-ipinfo-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xiao-Jiang-233/get-local-ipinfo-mcp/issues"
+  },
+  "homepage": "https://github.com/Xiao-Jiang-233/get-local-ipinfo-mcp#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.1",
     "node-fetch": "^3.3.2",
