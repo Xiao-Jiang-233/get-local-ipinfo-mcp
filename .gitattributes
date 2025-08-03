@@ -1,0 +1,10 @@
+# Set default behavior for text files
+text=auto
+
+# Mark TypeScript and Markdown as UTF-8
+*.ts text eol=lf
+*.md text eol=lf
+
+# Ensure license and config files use LF
+LICENSE text eol=lf
+*.json text eol=lf

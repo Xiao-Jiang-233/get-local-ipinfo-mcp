@@ -1,0 +1,29 @@
+{
+  "name": "get-local-ipinfo-mcp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "weather": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "typescript": "^5.9.2"
+  }
+}
