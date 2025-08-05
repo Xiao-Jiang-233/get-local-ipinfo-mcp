@@ -21,29 +21,18 @@
 - Node.js >= 18.0.0
 - 支持 MCP 协议的客户端（如 Cursor、Claude Desktop 等）
 
-### json 配置安装过程
-
-1. 运行`npm install -g @littlesirius/get-local-ipinfo-mcp`安装到本地。
-2. 运行`npm root -g`获得`node_modules`路径。
-3. 将上面返回的结果，如：`C:\nvm4w\nodejs\node_modules`。替换下面 json 中的`$path$`，并且将\改为\\\\
+### 快速 json 配置
 
 ```json
 {
   "mcpServers": {
     "get-local-ipinfo-mcp": {
-      "command": "npx",
-      "args": [
-        "tsx",
-        "$path$\\@littlesirius\\get-local-ipinfo-mcp\\build\\index.js"
-      ]
+      "command": "cmd",
+      "args": ["/c", "npx", "@littlesirius/get-local-ipinfo-mcp"]
     }
   }
 }
 ```
-
-    如："C:\\nvm4w\\nodejs\\node_modules\\@littlesirius\\get-local-ipinfo-mcp\\build\\index.js"
-
-4. 将改好的 json 复制\导入到 MCP 客户端
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "@littlesirius/get-local-ipinfo-mcp",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "MCP 工具服务：获取本机公网 IP 及地理位置信息，支持反爬虫和速率限制处理。",
   "main": "build/index.js",
   "types": "build/index.d.ts",
